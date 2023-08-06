@@ -18,18 +18,18 @@ public class MiniCalculator {
     /**
      * Метод для ввода чисел
      */
-    public static void operaton() {
+    public static void operaton() throws NotFormatException {
         try {
             Scanner scanner = new Scanner(System.in);
             System.out.print("Введите первое число: ");
-            double num1 = scanner.nextDouble();
+            float num1 = scanner.nextFloat();
 
             System.out.print("Введите операцию (+, -, *, /, ^): ");
             char operator = scanner.next().charAt(0);
 
             System.out.print("Введите второе число: ");
-            double num2 = scanner.nextDouble();
-            double result = calculate(num1, operator, num2);
+            float num2 = scanner.nextFloat();
+            float result = calculate(num1, operator, num2);
             
             cost += 1;
             h.put(cost, operator);
@@ -40,7 +40,7 @@ public class MiniCalculator {
         } catch (ArithmeticException e) {
             System.out.println("Ошибка: " + e.getMessage());
         } catch (Exception e) {
-            System.out.println("Произошла ошибка: " + e.getMessage());
+            System.out.println("Произошла ошибка. Повторите снова");
         }
     }
 
@@ -52,7 +52,7 @@ public class MiniCalculator {
      * @return
      * @throws Exception
      */
-    public static double calculate(double num1, char operator, double num2) throws Exception {
+    public static float calculate(float num1, char operator, float num2) throws Exception {
         switch (operator) {
             case '+': return Sum.sum(num1, num2);
             case '-': return Difference.difference(num1, num2);

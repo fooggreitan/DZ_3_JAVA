@@ -28,7 +28,6 @@ import java.util.Scanner;
         try {
             while(true){    
                 Scanner scanner = new Scanner(System.in);
-
                 System.out.println("\n1) Калькулятор\n2) История\nВведите значение: ");
                 int num = scanner.nextInt();
 
@@ -40,9 +39,6 @@ import java.util.Scanner;
                         break;
                     case 2:
                         MiniCalculator.history();
-                        break;
-                    default:
-                        System.out.println("Неверный ввод. Попробуйте еще раз.");
                         break;
                 }
             }

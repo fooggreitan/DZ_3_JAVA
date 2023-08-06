@@ -7,7 +7,7 @@ public class Difference {
      * @param num2
      * @return
      */
-    public static double difference(double num1, double num2) {
+    public static float difference(float num1, float num2) {
         return num1 - num2;
     }
 }

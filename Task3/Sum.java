@@ -7,7 +7,7 @@ public class Sum {
      * @param num2
      * @return
      */
-    public static double sum(double num1, double num2) {
+    public static float sum(float num1, float num2) {
         return num1 + num2;
     }
 }

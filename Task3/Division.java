@@ -8,7 +8,7 @@ public class Division {
      * @return
      * @throws InvalidInputException
      */
-    public static double division(double num1, double num2) throws InvalidInputException {
+    public static float division(float num1, float num2) throws InvalidInputException {
         if (num2 == 0) throw new InvalidInputException("Деление на ноль недопустимо");
         return num1 / num2;
     }

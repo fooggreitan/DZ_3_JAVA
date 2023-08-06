@@ -8,8 +8,8 @@ public class Degree {
      * @return
      * @throws InvalidInputException
      */
-    public static double degree(double num1, double num2) throws InvalidInputException {
+    public static float degree(float num1, float num2) throws InvalidInputException {
         if (num1 == 0 && num2 < 0) throw new InvalidInputException("Ноль не может быть возведен в отрицательную степень.");
-        return Math.pow(num1, num2);
+        return (float) Math.pow(num1, num2);
     } 
 }

@@ -7,7 +7,7 @@ public class Multiplication {
      * @param num2
      * @return
      */
-    public static double multiplication(double num1, double num2) {
+    public static float multiplication(float num1, float num2) {
         return num1 * num2;
     }
 }
