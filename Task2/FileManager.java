@@ -58,8 +58,7 @@ public class FileManager {
         int data;
 
         try(FileReader reder= new FileReader("Task2\\file.txt")){
-            FileWriter writer = new FileWriter("Task2\\\\copy_file.txt");
-        
+            FileWriter writer = new FileWriter("Task2\\copy_file.txt");
             while ((data = reder.read()) != -1) {
                 writer.write(data);
             }
